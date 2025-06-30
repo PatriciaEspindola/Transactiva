@@ -18,12 +18,7 @@ router.get("/my-page", function (req, res, next) {
 module.exports = router;
 
 //PARA EL FORMULARIO
-router.post("/procesar-pago", function (req, res, next) {
-  const { email, amount, paymentMethod } = req.body;
-
-  console.log("Pago recibido:", email, amount, paymentMethod);
-
-  res.send(
-    `Pago registrado: ${email}, Monto: ${amount}, Método: ${paymentMethod}`
-  );
+router.get("/payment-Form", function (req, res, next) {
+  res.render("paymentForm", {});
 });
+module.exports = router;
