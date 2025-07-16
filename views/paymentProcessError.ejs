@@ -1,13 +1,21 @@
+<!-- PARA LOS ESTILOS -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Error en el pago</title>
+    <title>Error en el Pago - Transactiva</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1>No se pudo procesar el pago</h1>
-    <p><%= errorMessage %></p>
-    <br />
-    <a href="/payment-Form">Intentar de nuevo</a>
+    <div class="container">
+      <h1>¡Ocurrió un error!</h1>
+      <p>
+        No fue posible procesar tu pago. Por favor, verifica tus datos e intenta
+        nuevamente.
+      </p>
+      <form action="/payment-Form" method="GET">
+        <button type="submit">Reintentar Pago</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,15 +1,26 @@
-<form action="/payment-process" method="POST">
-  <!-- Campo de Email -->
-  <label for="email">Correo Electrónico:</label>
-  <input type="email" id="email" name="email" required />
-  <br /><br />
+  <!-- Botón de Enviar -->
+  <button type="submit">Registrar Pago</button>
+</form>
 
-  <!-- Campo de Monto -->
-  <label for="amount">Monto:</label>
-  <input type="number" id="amount" name="amount" required />
-  <br /><br />
+<!-- PARA LOS ESTILOS -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Pago - Transactiva</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Pago</h1>
+        <form action="/payment-process" method="POST">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-  <!-- Selector de Método de Pago -->
+            <label for="monto">Monto a Pagar (MXN):</label>
+            <input type="number" id="amount" name="amount" min= "1" required>
+
+            <!-- Selector de Método de Pago -->
   <label for="paymentMethod">Método de Pago:</label>
   <select id="paymentMethod" name="paymentMethod" required>
     <option value="paypal">PayPal</option>
@@ -18,6 +29,8 @@
   </select>
   <br /><br />
 
-  <!-- Botón de Enviar -->
-  <button type="submit">Registrar Pago</button>
-</form>
+            <button type="submit">Realizar Pago</button>
+        </form>
+    </div>
+</body>
+</html>

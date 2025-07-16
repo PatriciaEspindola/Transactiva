@@ -1,16 +1,23 @@
+<!-- PARA LOS ESTILOS -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Pago exitoso</title>
+    <title>Pago Exitoso - Transactiva</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1>¡Pago realizado con éxito!</h1>
-    <p><%= msg %></p>
-    <p>Correo: <%= email %></p>
-    <p>Monto: <%= amount %></p>
-    <p>Método de pago: <%= paymentMethod %></p>
-    <br />
-    <a href="/payment-Form">Volver al inicio</a>
+    <div class="container">
+      <h1>¡Pago Realizado con Éxito!</h1>
+      <p><%= msg %></p>
+      <p>Correo: <%= email %></p>
+      <p>Monto: <%= amount %></p>
+      <p>Método de pago: <%= paymentMethod %></p>
+      <br />
+      <p>Gracias por tu pago. Se ha registrado correctamente.</p>
+      <form action="/payment-Form" method="GET">
+        <button type="submit">Volver al Inicio</button>
+      </form>
+    </div>
   </body>
 </html>
