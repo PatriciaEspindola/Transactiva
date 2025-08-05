@@ -86,3 +86,19 @@ button {
 button:hover {
   background-color: #005999;
 }
+
+.btn {
+  background-color: #0071bc;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005999;
+}
