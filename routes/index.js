@@ -13,7 +13,7 @@ router.get("/", function (req, res, next) {
 // GET My View page
 router.get("/my-page", function (req, res, next) {
   const myData = {
-    name: "Sem",
+    name: "Paty",
     title: "My Personal site",
     say: "hello!!!",
   };
